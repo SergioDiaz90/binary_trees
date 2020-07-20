@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 /**
- * binary_tree_inorder - function for print inorder tree of left, center, right.
+ * binary_tree_size - function for print size or number of nodes in an tree.
  * @tree: pointer the root in tree.
- * @func: function for print value the node.
+ * Return: number of nodes in the tree.
  */
 
 size_t binary_tree_size(const binary_tree_t *tree)
