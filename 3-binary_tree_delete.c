@@ -1,10 +1,9 @@
 #include "binary_trees.h"
 /**
- * binary_tree_node - creates a binary tree node
- * @parent: the pointer to the parent node of the node to create
- * @value: the value of the this new node
- * Return: a pointer to the new node or NULL on failure
+ * binary_tree_delete - del tree binnary.
+ * @tree: pointer the tree for delete
  */
+
 void binary_tree_delete(binary_tree_t *tree)
 {
 	if (!tree)
@@ -14,6 +13,11 @@ void binary_tree_delete(binary_tree_t *tree)
 	binary_tree_delete(tree->right);
 	del_node(tree);
 }
+
+/**
+ * del_node - Destroy nodes.
+ * @node: pointer to node for destroy.
+ */
 
 void del_node(binary_tree_t *node)
 {
