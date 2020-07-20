@@ -10,12 +10,9 @@ void binary_tree_delete(binary_tree_t *tree)
 	if (!tree)
 		return;
 
-	if (tree->left == NULL && tree->right == NULL)
-		del_node(tree);
-	else if (tree->left != NULL)
-		binary_tree_delete(tree->left);
-	else if (tree->right != NULL)
-		binary_tree_delete(tree->right);
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
+	del_node(tree);
 }
 
 void del_node(binary_tree_t *node)
