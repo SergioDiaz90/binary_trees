@@ -1,8 +1,8 @@
 #include "binary_trees.h"
 /**
- * binary_tree_inorder - function for print inorder tree of left, center, right.
+ * binary_tree_height - function for print inorder of left, center, right.
  * @tree: pointer the root in tree.
- * @func: function for print value the node.
+ * Return: 0 in case of failed or int in case success.
  */
 
 size_t binary_tree_height(const binary_tree_t *tree)
